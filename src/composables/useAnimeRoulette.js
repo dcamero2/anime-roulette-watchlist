@@ -37,7 +37,7 @@ export function useAnimeRoulette() {
           return
         }
 
-        if (!response.status === 429) {
+        if (response.status === 429) {
           startCooldown(RETRY_SECONDS)
           error.value = `Rate-limited (429). Please wait ${RETRY_SECONDS}s before spinning again.`
           return
