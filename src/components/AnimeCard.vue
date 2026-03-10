@@ -81,7 +81,7 @@ watch(
 
     <div
       v-else-if="error"
-      class="rounded-2xl border border-red-300/50 bg-red-500/10 p-4 text-red-100"
+      class="rounded-2xl border border-red-200/50 bg-red-600/10 p-4 text-red-100"
     >
       <h3 class="text-lg font-semibold">Spin failed</h3>
       <p class="mt-2 text-sm text-red-100/90">{{ error }}</p>
@@ -132,7 +132,7 @@ watch(
       <div class="flex flex-wrap gap-3">
         <button
           type="button"
-          class="rounded-full border border-cyan-300/60 bg-cyan-400/15 px-4 py-2 text-sm font-semibold text-cyan-100 transition hover:bg-cyan-400/25 disabled:cursor-not-allowed disabled:opacity-50"
+          class="rounded-full border border-cyan-300/60 bg-cyan-900 px-4 py-2 text-sm font-semibold text-cyan-100 transition hover:bg-cyan-400/30 disabled:cursor-not-allowed disabled:opacity-50"
           :disabled="inWatchlist"
           @click="emit('add', anime)"
         >
@@ -143,7 +143,7 @@ watch(
           :href="anime.url"
           target="_blank"
           rel="noopener noreferrer"
-          class="rounded-full border border-white/20 px-4 py-2 text-sm font-semibold text-white transition hover:border-white/40"
+          class="rounded-full border border-white/40 px-4 py-2 text-sm font-semibold text-white transition hover:border-white/80"
         >
           Open on MAL
         </a>
